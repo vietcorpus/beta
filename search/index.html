@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval'">
+    <title>Search</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="title" content="Search">
+    <meta name="description" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <meta property="fb:app_id" content="1782964465289118">
+    <meta property="fb:admins" content="100009152644081">
+    <meta property="fb:admins" content="trangsinh">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:url" content="/search/">
+    <meta property="og:site_name" content="Viet Corpus">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Search">
+    <meta property="og:description" content="">
+    
+    
+    
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:url" content="/search/">
+    <meta name="twitter:title" content="Search">
+    <meta name="twitter:description" content="">
+    
+    <meta name="twitter:site" content="https://vietcorpus.com">
+    <meta name="twitter:creator" content="">
+    
+<link rel="stylesheet" type="text/css" href="/css/bundled.min.baa3951fb7f623ed4b6d95a41de213e3.css?ts=1659207177">
+</head>
+
+<body class="nk-body npc-invest bg-lighter" id="page-search">
+    <div class="nk-app-root">
+        <div class="nk-wrap ">
+            <div class="nk-header nk-header-fluid is-theme  is-regular">
+    <div class="container-xl wide-xl">
+        <div class="nk-header-wrap">
+            <div class="nk-menu-trigger mr-sm-2 d-lg-none">
+                <a id="btnMenu" href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="headerNav">
+                    <em class="icon ni ni-menu"></em>
+                </a>
+            </div>
+            <div class="nk-header-brand">
+                <a href="/" class="logo-link">
+                    
+                    <span class="vc-logo">VietCorpus</span>
+                </a>
+            </div>
+            <div id="headerMenu" class="nk-header-menu" data-content="headerNav">
+                <div class="nk-header-mobile">
+                    <div class="nk-header-brand">
+                        <a href="/" class="logo-link">
+                            <span class="black vc-logo">VietCorpus</span>
+                        </a>
+                    </div>
+                    <div class="nk-menu-trigger mr-n2">
+                        <a href="#" class="nk-nav-toggle nk-quick-nav-icon click-hide-menu" data-target="headerNav">
+                            <em class="icon ni ni-arrow-left"></em>
+                        </a>
+                    </div>
+                </div>
+                <ul class="nk-menu nk-menu-main ui-s2">
+                    <li class="nk-menu-item page-home">
+                        <a href="/" class="nk-menu-link">
+                            <span class="nk-menu-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item page-about-us">
+                        <a href="/page/about-us/" class="nk-menu-link">
+                            <span class="nk-menu-text">About Us</span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item page-guide">
+                        <a href="/page/guide/" class="nk-menu-link">
+                            <span class="nk-menu-text">Guide</span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item page-contact">
+                        <a href="/page/contact/" class="nk-menu-link">
+                            <span class="nk-menu-text">Contact</span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item page-user-corpus vc-private">
+                        <a href="/user/corpus/" class="nk-menu-link">
+                            <span class="nk-menu-text">My Corpus</span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item page-search vc-private">
+                        <a href="/search/" class="nk-menu-link">
+                            <span class="nk-menu-text">Search</span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScNLZHqzrFH5eSDu-3ONFJnPwK-x0NCn1Njbn8yFbbhGXnD4w/viewform" target="_blank" class="nk-menu-link">
+                            <span class="nk-menu-text">Góp ý</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="menuOverlay" class="nk-header-overlay d-none click-hide-menu" data-target="headerNav"></div>
+            <div class="nk-header-tools min961">
+                <ul class="nk-menu nk-menu-main ui-s2">
+                    <li class="nk-menu-item vc-public d-none page-signin">
+                        <a href="/signin" class="nk-menu-link">
+                            <span class="nk-menu-text">Login</span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item page-signup">
+                        <a href="/signup" class="nk-menu-link vc-public d-none">
+                            <span class="nk-menu-text">Register</span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item has-sub nav-r-li-username vc-private d-none">
+                        <a href="#" class="nk-menu-toggle">
+                            <div class="user-toggle">
+                                <div class="user-avatar sm"><em class="icon ni ni-user-alt"></em></div>
+                                <div class="user-info d-none d-xl-block">
+                                    <div class="user-name vc-name"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="nk-menu-sub nk-menu-custom">
+                            <li class="nk-menu-item"><a href="/user/profile" class="nk-menu-link"><span class="nk-menu-text">My Profile</span></a></li>
+                            <li class="nk-menu-item"><a href="/user/corpus" class="nk-menu-link"><span class="nk-menu-text">My Corpus</span></a></li>
+                            <li class="nk-menu-item"><a id="btnLogout" href="javascript:void(0);" class="nk-menu-link"><span class="nk-menu-text"><em class="icon ni ni-signout"></em> Sign out</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="loader" class="d-none">
+    <div class="container">
+        <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+        </div>
+    </div>
+</div>
+<script src="/plugins/xlsx/xlsx.js"></script>
+<div class="nk-content nk-content-fluid vc-auth-required" id="page-search-content">
+    <div class="container-xl2 wide-xl2">
+        <div class="nk-content-inner">
+            <div class="nk-content-body">
+                <div class="nk-block-head">
+                    <div class="nk-block-between g-3">
+                        <div class="nk-block-head-content">
+                            <div class="breadcrumb-container">
+                                <nav>
+                                    <ul class="breadcrumb breadcrumb-arrow">
+                                        <li class="breadcrumb-item">
+                                            <a href="/">Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item active">Search</li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <h3 class="nk-block-title page-title min961">Search</h3>
+                            <div class="nk-block-des text-soft">
+                                <p v-if="done" v-cloak><b class="text-danger" v-html="total"></b> hits found</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-transparent">
+                    <div class="container">
+                        <div class="row mb-5">
+                            <div class="col-lg-10 mx-auto">
+                                <div class="p-5 rounded">
+                                    <form action="#" v-on:submit.prevent="submit()">
+                                        <div class="input-group mb-4 vc-search">
+                                            <input v-model="keyword" type="search" placeholder="What're you searching for?" aria-describedby="button-addon5" class="form-control">
+                                            <div class="input-group-append">
+                                                <button @click="submit()" type="submit" class="btn btn-primary"><em class="icon ni ni-search"></em></button>
+                                            </div>
+                                            <div class="drodown search-download" v-if="downloadable" v-cloak>
+                                                <button @click="download()" type="button" class="btn btn-icon btn-primary">
+                                                    <em class="icon ni ni-download"></em> Download &nbsp;&nbsp;
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <div class="search-corpora-list" v-if="showAllOption()" v-cloak><input type="radio" id="selectedAll" value="all" v-model="selectedAll" @change="onSelectAll()"> <label class="all group tooltip-top" for="selectedAll" data-tooltip="Search from all available corpora">All</label></div>
+                                            <div class="search-corpora-list" v-if="showOption('mine')" v-cloak><input type="radio" id="selectedMyOwn" value="own" v-model="selectedAll" @change="onSelectOwn()"> <label class="own group tooltip-top" for="selectedMyOwn" data-tooltip="Search from my own corpora">My corpora</label></div>
+                                            <div class="search-corpora-list" v-if="showOption('public')" v-cloak><input type="radio" id="selectedPublic" value="public" v-model="selectedAll" @change="onSelectPublic()"> <label class="public group tooltip-top" for="selectedPublic" data-tooltip="Search from public corpora">Public corpora</label></div>
+                                            <div class="search-corpora-list" v-if="showOption('shared')" v-cloak><input type="radio" id="selectedShared" value="shared" v-model="selectedAll" @change="onSelectShared()"> <label class="shared group tooltip-top" for="selectedShared" data-tooltip="Search from shared corpora">Shared corpora</label></div>
+                                            <div class="search-corpora-list" v-for="c in mine"><input type="checkbox" :id="c._id" :value="c._id" v-model="selectedCorpus" @change="onSelectCorpus(c._id)"> <label class="own" :for="c._id" v-html="c.name"></label></div>
+                                            <div class="search-corpora-list" v-for="c in public"><input type="checkbox" :id="c._id" :value="c._id" v-model="selectedCorpus" @change="onSelectCorpus(c._id)"> <label class="public" :for="c._id" v-html="c.name"></label></div>
+                                            <div class="search-corpora-list" v-for="c in shared"><input type="checkbox" :id="c._id" :value="c._id" v-model="selectedCorpus" @change="onSelectCorpus(c._id)"> <label class="shared" :for="c._id" v-html="c.name"></label></div>
+                                        </div>
+                                        <p class="text-danger center" v-html="errorMessage"></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc-search-pageSize" v-if="parts.length > 0" v-cloak>
+                        <span>Display</span>
+                        <select class="form-control" v-model="pageSize">
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                            <option value="500">500</option>
+                            <option value="1000">1000</option>
+                        </select>
+                        <span>items per page</span>
+                    </div>
+                </div>
+            </div>
+            <div class="nk-block" v-if="parts.length > 0" v-cloak>
+                <div class="card card-bordered card-stretch">
+                    <div class="card-inner-group">
+                        <div class="card-inner p-0 no-border">
+                            <table class="table table-striped table-hover table-bordered vc-search-result" id="searchResult">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Source language</th>
+                                        <th scope="col">Target language</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="(item, index) in parts" :key="item._id">
+                                        <th scope="row" v-html="fixIndex(index)"></th>
+                                        <td>
+                                            <span class="search-result-text" v-html="item.origin"></span>
+                                            <br>
+                                            <span class="search-result-meta" v-if="item.doc.origin.author" v-cloak>
+                                                (<span v-html="item.doc.origin.author"></span>,
+                                                <span v-html="item.doc.origin.year"></span>,
+                                                <span><i v-html="item.doc.origin.name"></i></span>,
+                                                <span v-html="item.doc.origin.location"></span>,
+                                                <span v-html="item.doc.origin.publisher"></span>)
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="search-result-text" v-html="item.translation"></span>
+                                            <br>
+                                            <span class="search-result-meta" v-if="item.doc.translation.author" v-cloak>
+                                                (<span v-html="item.doc.translation.author"></span>,
+                                                <span v-html="item.doc.translation.year"></span>,
+                                                <span><i v-html="item.doc.translation.name"></i></span>,
+                                                <span v-html="item.doc.translation.location"></span>,
+                                                <span v-html="item.doc.translation.publisher"></span>)
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination-wrapper">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item" v-for="(item, index) in pagination.pages" :class="{active: item == page}"><a class="page-link" :href="linkTo(item)" v-html="item"></a></li>
+                            </ul>
+                        </div>
+                        <div class="pagination-wrapper">
+                            <ul class="pagination justify-content-center" id="pagination" :total="pages" visiblePages="10" :current="page">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+            <div class="nk-footer nk-footer-fluid bg-lighter">
+    <div class="container-xl">
+        <div class="nk-footer-wrap">
+            <div class="nk-footer-copyright"> &copy; 2021 VietCorpus - All Rights Reserved.</a></div>
+            <div class="nk-footer-links">
+                <ul class="nav nav-sm">
+                    <li class="nav-item"><a class="nav-link" href="/page/terms/">Terms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/page/privacy-policy/">Privacy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/page/guide/">Help</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLScNLZHqzrFH5eSDu-3ONFJnPwK-x0NCn1Njbn8yFbbhGXnD4w/viewform" target="_blank">Góp ý</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+            
+            <script src="/plugins/vue/vue.js"></script>
+            
+            
+            
+<script async type="text/javascript" src="/js/bundled.min.fdcad629162d9be14cb0a956626bea6bcfa4925510f3e9f54b0d3d320690ed7658bd974576a259ad1376fd0c293e394e.js?ts=1659207177" integrity="sha384-/crWKRYtm&#43;FMsKlWYmvqa8&#43;kklUQ8&#43;n1Sw09MgaQ7XZYvZdFdqJZrRN2/QwpPjlO"></script>
+            
+        </div>
+    </div>
+</body>
+
+</html>
